@@ -1,0 +1,16 @@
+server:
+  port: ${port:9001}
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.101.159.167:3306/springboot
+    username: root
+    password: 13479190512
+  application:
+    name: user-service
+mybatis:
+  type-aliases-package: com.alipay.service.user.entity
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
